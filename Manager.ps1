@@ -1,7 +1,15 @@
-#Powershell-based password manager
+# Powershell-based password manager
 
-$_ = 0
+# Init PowerShell Gui
+Add-Type -AssemblyName System.Windows.Forms
 
-if ($_ -eq 0) {
-    Write-Host "NO!!"
-}
+# Creates form
+$LocalManagerForm = New-Object system.Windows.Forms.Form
+
+# Define size, title, background color
+$LocalManagerForm.ClientSize = '500,300'
+$LocalManagerForm.text = "Password Manager - pb.v.0"
+$LocalManagerForm.BackColor = "#ffffff"
+
+# Display form
+[void]$LocalManagerForm.ShowDialog()
