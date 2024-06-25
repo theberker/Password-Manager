@@ -50,10 +50,6 @@ $AddPasswordButton.Add_Click({
 
     # Output the credentials for demonstration (in practice, store them securely)
     [System.Windows.Forms.MessageBox]::Show("Username: $Username`nPassword: $Password", "Stored Credentials")
-
-    # Clear the text boxes after storing the credentials
-    $UsernameTextBox.Clear()
-    $PasswordTextBox.Clear()
 })
 
 # Display the main form
